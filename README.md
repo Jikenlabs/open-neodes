@@ -87,6 +87,21 @@ Merci à tous les contributeurs et sponsors ! 🙏
 
 ---
 
+## 🏢 Support Professionnel
+
+Besoin d'un **support garanti** et des **mises à jour annuelles des normes DSN** pour votre entreprise ?
+
+**Jiken Labs** propose une offre de support professionnel incluant :
+
+- 📅 **Mise à jour annuelle** des fichiers de normes (P26V01, P27V01, etc.) dès leur publication officielle
+- 🛠️ **Support technique prioritaire** par email
+- 🔧 **Assistance à l'intégration** dans vos systèmes existants
+- 📋 **SLA garanti** pour les environnements de production
+
+👉 **[En savoir plus sur www.jikenlabs.com/open-neodes](https://www.jikenlabs.com/open-neodes)**
+
+---
+
 ## 📄 Licence
 
 Distribué sous la licence **Apache 2.0**. Voir `LICENSE` pour plus d'informations.
