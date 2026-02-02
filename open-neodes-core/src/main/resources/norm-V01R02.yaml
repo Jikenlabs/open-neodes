@@ -1,0 +1,37 @@
+version: "V01R02"
+segments:
+  S05.G51.00:
+    name: "En-tête de Lot"
+    fields:
+      S05.G51.00.001: { name: "VersionNorme", label: "Version de la norme", type: "X", length: 6 }
+      S05.G51.00.002: { name: "NumeroLot", label: "Numéro du lot", type: "X", length: 10 }
+      S05.G51.00.003: { name: "TypeLot", label: "Type de lot", type: "X", length: 2 }
+      S05.G51.00.004: { name: "DateLot", label: "Date de création du lot", type: "D", length: 8 }
+      S05.G51.00.005: { name: "HeureLot", label: "Heure de création du lot", type: "X", length: 6 }
+      S05.G51.00.006: { name: "NombreGroupes", label: "Nombre de groupes dans le lot", type: "N", length: 5 }
+  S06.G51.00:
+    name: "En-tête de Groupe"
+    fields:
+      S06.G51.00.001: { name: "CodeGroupe", label: "Code du groupe", type: "X", length: 10 }
+  S96.G51.00:
+    name: "Fin de Groupe"
+    fields:
+      S96.G51.00.001: { name: "FinLigne", label: "Marqueur de fin de groupe", type: "X", length: 5 }
+      S96.G51.00.002: { name: "NombreDSN", label: "Nombre de DSN dans le groupe", type: "N", length: 5 }
+  S95.G51.00:
+    name: "Fin de Lot"
+    fields:
+      S95.G51.00.001: { name: "NumeroLot", label: "Numéro du lot (rappel)", type: "X", length: 10 }
+      S95.G51.00.002: { name: "NombreGroupes", label: "Nombre de groupes (rappel)", type: "N", length: 5 }
+
+dsnEnvelope:
+  S05.G51.00:
+    minOccurs: 1
+    maxOccurs: 1
+    children:
+      S06.G51.00:
+        minOccurs: 1
+        maxOccurs: -1
+        children:
+          S96.G51.00: { minOccurs: 1, maxOccurs: 1 }
+      S95.G51.00: { minOccurs: 1, maxOccurs: 1 }

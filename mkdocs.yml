@@ -1,0 +1,50 @@
+site_name: open-neodes
+site_description: Bibliothèque Java pour le parsing DSN
+site_author: JikenLabs
+site_url: https://www.jikenlabs.com
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Introduction: index.md
+  - Guide Utilisateur: USER_GUIDE.md
+  - Guide Développeur: DEVELOPER_GUIDE.md
+
+repo_name: jikenlabs/open-neodes
+repo_url: https://github.com/jikenlabs/open-neodes
