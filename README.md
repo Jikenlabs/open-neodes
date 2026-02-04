@@ -37,7 +37,7 @@ import java.io.FileInputStream;
 // Parsing asynchrone utilisant les Virtual Threads
 InputStream is = new FileInputStream("declaration.dsn");
 DsnDocument doc = DsnParser.parseAutoDetectAsync(is).join();
-
+```
 ### 🔍 Requêtage Fluide et Puissant
 
 Arrêtez de lutter avec les Maps imbriquées. Utilisez le moteur de `query` :
